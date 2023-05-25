@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .card-gray {
+        @apply w-full bg-gray-200 rounded-lg shadow-md md:w-80;
+    }
+    .title {
+        @apply font-bold text-indigo-700 text-9xl;
+    }
+}
