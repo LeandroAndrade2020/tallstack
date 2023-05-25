@@ -23,3 +23,10 @@ Vídeo disponível: https://www.youtube.com/watch?v=NKRQqU9ZU78
 
 - :class="{'bg-green-400': open}"
 
++ Livewire (javascripts e ajax)
+
+- wire:model.lazy
+- wire:model.defer
+- wire:model.debounced.500ms
+
+

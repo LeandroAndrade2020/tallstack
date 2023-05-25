@@ -13,18 +13,13 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
-        {{-- @livewireStyles --}}
+        @livewireStyles
         <style>
             [x-cloak] {display: none !important;}
         </style>
     </head>
     <body class="p-10">
-        <div x-data="{ open: false}">
-            <button @click="open = !open" class="px-4 py-2 text-white bg-indigo-700 rounded-md" :class="{'bg-green-400': open}">Abrir</button>
-            <div x-cloak class="p-4 mt-5 bg-gray-300 rounded-md w-80" x-show="open">
-                Conteudo
-            </div>
-        </div>
-        {{-- @livewireScripts --}}
+        @livewire('user.form', ['id' => request()->route('user')])
+        @livewireScripts
     </body>
 </html>
