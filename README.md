@@ -30,3 +30,18 @@ Vídeo disponível: https://www.youtube.com/watch?v=NKRQqU9ZU78
 - wire:model.debounced.500ms
 
 
++ validations
+
+- validações complexas
+- validationAttributes
+- messages
+
++ blade
+
+- <button>{{ $isEditing ? 'Salvar' : 'Cadastrar' }}</button>
+
+
++ plugin
+
+- livewire alert ( https://livewire-alert.jantinnerezo.com/ )
+

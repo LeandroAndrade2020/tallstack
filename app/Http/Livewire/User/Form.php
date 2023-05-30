@@ -18,7 +18,7 @@ class Form extends Component
     public $isEditing = false;
 
 
-    public function rules()
+    public function rules() //validações complexas
     {
         return[
             'name' => 'required',
@@ -30,6 +30,17 @@ class Form extends Component
         ];
 
     }
+
+    protected $messages = [
+        'required' => 'O campo :attribute é obrigatório',
+    ];
+
+    protected $validationAttributes = [
+        'name' => 'nome',
+        'email' => 'email',
+        'password' => 'senha',
+        'password_confirmation' => 'confirmação de senha',
+    ];
 
     public function mount($id = null)
     {

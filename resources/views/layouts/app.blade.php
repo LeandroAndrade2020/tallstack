@@ -18,8 +18,12 @@
             [x-cloak] {display: none !important;}
         </style>
     </head>
-    <body class="p-10">
+    <body class="p-10 bg-slate-400">
         @livewire('user.form', ['id' => request()->route('user')])
         @livewireScripts
+
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <x-livewire-alert::scripts />
     </body>
 </html>
