@@ -13,7 +13,6 @@ class Table extends Component
     use LivewireAlert;
     use WithPagination;
 
-    public $users = [];
     public $user;
 
     protected $listeners = ['confirmed'];
@@ -39,7 +38,6 @@ class Table extends Component
     public function render()
     {
         $users = User::paginate(5);
-        // dd($users);
         return view('livewire.user.table',[
             'users' => $users
         ]);

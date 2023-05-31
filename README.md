@@ -28,6 +28,7 @@ Vídeo disponível: https://www.youtube.com/watch?v=NKRQqU9ZU78
 - wire:model.lazy
 - wire:model.defer
 - wire:model.debounced.500ms
+- wire:loading.attr="disabled" // desabilitar o button após clicar
 
 
 + validations

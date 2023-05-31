@@ -74,6 +74,7 @@ class Form extends Component
 
     public function update($data)
     {
+        sleep(5);
         $this->user->update($data);
 
         $this->redirect('/');

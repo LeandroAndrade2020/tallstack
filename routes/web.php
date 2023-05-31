@@ -28,6 +28,7 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
+    Route::view('users', 'user-index')->name('users.index');
     Route::view('users/create', 'user-create')->name('users.create');
     Route::view('users/{user}/edit', 'user-create')->name('users.edit');
 });
