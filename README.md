@@ -44,4 +44,5 @@ Vídeo disponível: https://www.youtube.com/watch?v=NKRQqU9ZU78
 + plugin
 
 - livewire alert ( https://livewire-alert.jantinnerezo.com/ )
+- vite-livewire-plugin  ( npm install --save-dev @defstudio/vite-livewire-plugin )
 

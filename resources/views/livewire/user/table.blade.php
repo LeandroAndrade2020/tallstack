@@ -8,7 +8,7 @@
                 <th>Ações</th>
             </tr>
         </thead>
-        <tbody>
+        @dd($users)
             @foreach ($users as $user )
             <tr>
                 <td class="text-center">{{ $user->name }}</td>
@@ -24,4 +24,5 @@
             @endforeach
         </tbody>
     </table>
+    {{-- {{ $users->links() }} --}}
 </div>
